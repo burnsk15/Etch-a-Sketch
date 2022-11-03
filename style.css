@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0px;
+    height: 100%; /* Set the parent container to 100% 
+    to fit allow the container div to stretch to fit the screen*/
+}
+
+/* Styling for the container div*/
+#container {
+    display: flex;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin: 0px;
+    height: 100%; /* To stretch to fit the screen*/
+}
+/* Styling the column containers*/
+.column {
+    display: flex;
+    flex-flow: row wrap; 
+    flex: 1 1 auto;
+}
+
+/* Styling each item*/
+.item {    
+    border: 1px solid lightgray;
+    flex: 1 0 100%;
+}
+/*
+@media screen and (min-width: 800px) {
+    .column {
+        flex: 1;
+    }
+}
