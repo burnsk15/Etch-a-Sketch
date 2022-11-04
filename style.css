@@ -9,7 +9,7 @@ body {
 #container {
     display: flex;
     border: 1px solid black;
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
     margin: 0px;
     height: 100%; /* To stretch to fit the screen*/
 }
@@ -25,9 +25,9 @@ body {
     border: 1px solid lightgray;
     flex: 1 0 100%;
 }
-/*
-@media screen and (min-width: 800px) {
-    .column {
-        flex: 1;
-    }
+
+/* Change background color to divs with color class */
+.color {
+    background-color: blue;
 }
+
