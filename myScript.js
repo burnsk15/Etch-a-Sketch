@@ -14,3 +14,14 @@ for(i=0; i<16; i++) {
         column.appendChild(item);
     }
 }
+
+// addEventListener to a mouseover event
+document.querySelectorAll('.item').forEach(item => { 
+    item.addEventListener('mouseover', () => {
+    mouseOver(item)})
+    });
+
+// Function to add a class to the element that the mouse runs over
+function mouseOver(item) {
+    item.classList.add('color');
+}
