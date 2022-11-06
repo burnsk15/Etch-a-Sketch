@@ -3,6 +3,14 @@ body {
     margin: 0px;
     height: 100%; /* Set the parent container to 100% 
     to fit allow the container div to stretch to fit the screen*/
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the button */
+button {
+    font-size: 50px;
+    padding: 25px;
 }
 
 /* Styling for the container div*/
