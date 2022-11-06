@@ -13,7 +13,7 @@ function drawGrid() {
         document.getElementById('container').appendChild(column);
 
         // For loop to create divs to make columns
-        for(x=0; x<16; x++) {
+        for(x=0; x<gridNumber; x++) {
             let item = document.createElement('div')
             item.className = 'item';
             column.appendChild(item);
@@ -32,22 +32,7 @@ function redrawGrid() {
     document.querySelectorAll('.column').forEach(item => {
         item.parentElement.removeChild(item);
     });
-    // Loop through and draw up the columns
-        for(i=0; i<gridNumber; i++) {
-        // Create elements
-        let column = document.createElement('div');
-        // Adding class to the elements
-        column.className = 'column';
-        // Adding the grids to the container <div>
-        document.getElementById('container').appendChild(column);
-
-        // For loop to create divs to make columns
-            for(x=0; x<gridNumber; x++) {
-            let item = document.createElement('div')
-            item.className = 'item';
-            column.appendChild(item);
-            }
-        }      
+    drawGrid();     
 }
 
 // addEventListener to a mouseover event. Use forEach to cylce through all elements with 'item' class
